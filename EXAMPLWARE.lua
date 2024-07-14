@@ -55,10 +55,13 @@ local ArsenalSection = ArsenalTab:CreateSection("Arsenal", nil)
 local BladeballTab = Window:CreateTab("Blade Ball", nil)
 local BladeballSection = BladeballTab:CreateSection("Blade Ball", nil)
 
+local BackdoorTab = Window:CreateTab("Backdoors", nil)
+local BackdoorSection = BackdoorTab:CreateSection("Backdoor Related Stuff", nil)
+
 --Notification
 Rayfield:Notify({
-    Title = "Exampleware loaded!",
-    Content = "Thank you for using Exampleware!",
+    Title = "Exampleware BETA loaded!",
+    Content = "Thank you for using Exampleware! Latest Update: BETA 1.01",
     Duration = 5,
     Image = 18312936379,
     Actions = { -- Notification Buttons
@@ -83,7 +86,7 @@ Rayfield:Notify({
  local Button = AdminTab:CreateButton({
     Name = "Nameless Admin",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))();
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Diamondd96/z-Admin-v6.7/main/z%20Admin%20v6.7"))()
     end,
  })
 
@@ -121,6 +124,20 @@ Rayfield:Notify({
    Name = "Unnamed Esp",
    Callback = function()
       loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))()
+   end,
+})
+
+ local Button = UniversalTab:CreateButton({
+   Name = "Chat Bypass 1",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/BakaPraselol/MRCBV4LSB4KRS/main/Loader"))()
+   end,
+})
+
+ local Button = UniversalTab:CreateButton({
+   Name = "Chat Bypass 2 (Key:P1d#uT",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/vqmpjayZ/Bypass/8e92f1a31635629214ab4ac38217b97c2642d113/vadrifts"))()
    end,
 })
 
@@ -327,5 +344,13 @@ local Button = BladeballTab:CreateButton({
    Name = "Astra Hub",
    Callback = function()
       loadstring(game:HttpGet("https://code4zaa.xyz/script/script-loader.lua"))()
+   end,
+})
+
+--Backdoor
+local Button = BackdoorTab:CreateButton({
+   Name = "LALOL HUB (Backdoor scanner)",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/Its-LALOL/LALOL-Hub/main/Backdoor-Scanner/script'))()
    end,
 })
