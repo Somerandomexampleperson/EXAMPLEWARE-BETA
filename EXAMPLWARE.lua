@@ -697,13 +697,6 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/mai
    end,
 })
 
-local Button = HubsTab:CreateButton({
-   Name = "Orca X (Also Looks Good)",
-   Callback = function()
-loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/richie0866/orca/master/public/latest.lua"))()
-   end,
-})
-
  --Kat
  local Button = KatTab:CreateButton({
     Name = "Unnamed KAT Gui",
