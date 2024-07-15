@@ -64,7 +64,7 @@ local BedwarsSection = BedwarsTab:CreateSection("Bedwars", nil)
 --Notification
 Rayfield:Notify({
     Title = "Exampleware BETA loaded!",
-    Content = "Thank you for using Exampleware! This script is made for solara. Latest Update: BETA 1.1",
+    Content = "Thank you for using Exampleware! This script is made for solara. Latest Update: BETA 1.15",
     Duration = 5,
     Image = 18312936379,
     Actions = { -- Notification Buttons
@@ -776,6 +776,21 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/mai
    end,
 })
 
+ local Button = Mm2Tab:CreateButton({
+   Name = "GG Hub",
+   Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/Farx11122/Dupess/main/SecondDupe"))()
+   end,
+})
+
+ local Button = Mm2Tab:CreateButton({
+   Name = "Nexus",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/s-0-a-b/nexus/main/loadstring"))()
+   end,
+})
+
+
 
 --Lucky Blocks BattleGround
 local Button = LuckyTab:CreateButton({
@@ -827,6 +842,13 @@ local Button = ArsenalTab:CreateButton({
    Name = "Midnight.CC",
    Callback = function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/laeraz/midnightcc/main/public.lua"))()
+   end,
+})
+
+local Button = ArsenalTab:CreateButton({
+   Name = "Tbao Hub",
+   Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubArsenal"))()
    end,
 })
 
