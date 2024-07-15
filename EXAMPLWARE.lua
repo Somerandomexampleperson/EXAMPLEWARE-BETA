@@ -854,13 +854,6 @@ local Button = BackdoorTab:CreateButton({
 })
 
 local Button = BackdoorTab:CreateButton({
-   Name = "Frakture SS",
-   Callback = function()
-      loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-FraktureSS-4779"))()
-   end,
-})
-
-local Button = BackdoorTab:CreateButton({
    Name = "TNTmasterSS",
    Callback = function()
      loadstring(game:HttpGet("https://pastebin.com/raw/hi4mDR43"))()
