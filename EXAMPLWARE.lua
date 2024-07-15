@@ -824,7 +824,15 @@ local Button = ArsenalTab:CreateButton({
 })
 
 local Button = ArsenalTab:CreateButton({
-   Name = "Air Hub",
+   Name = "Midnight.CC",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/laeraz/midnightcc/main/public.lua"))()
+   end,
+})
+
+
+local Button = ArsenalTab:CreateButton({
+   Name = "Air Hub (Kinda Sucks)",
    Callback = function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/AirHub-V2/main/src/Main.lua"))()
    end,
