@@ -64,7 +64,7 @@ local BedwarsSection = BedwarsTab:CreateSection("Bedwars", nil)
 --Notification
 Rayfield:Notify({
     Title = "Exampleware BETA loaded!",
-    Content = "Thank you for using Exampleware! This script is made for solara. Latest Update: BETA 1.15",
+    Content = "Thank you for using Exampleware! This script is made for solara. Latest Update: BETA 1.16",
     Duration = 5,
     Image = 18312936379,
     Actions = { -- Notification Buttons
@@ -896,5 +896,12 @@ local Button = BedwarsTab:CreateButton({
    Name = "Aurora",
    Callback = function()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/cocotv666/Aurora/main/Aurora_Loader"))()
+   end,
+})
+
+local Button = BedwarsTab:CreateButton({
+   Name = "Vape V4 (Wave only)",
+   Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
    end,
 })
