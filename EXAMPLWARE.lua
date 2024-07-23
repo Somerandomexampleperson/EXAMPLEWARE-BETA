@@ -89,7 +89,7 @@ Rayfield:Notify({
  local Button = AdminTab:CreateButton({
     Name = "Nameless Admin",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Diamondd96/z-Admin-v6.7/main/z%20Admin%20v6.7"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))();
     end,
  })
 
@@ -508,7 +508,7 @@ end)
 local Button = UniversalTab:CreateButton({
    Name = "Chat bypass for 'a literal baseplate' 2",
    Callback = function()
-       loadstring(game:HttpGet("https://raw.githubusercontent.com/7hbl/chat-bypasser-by-me/main/bypasser"))()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/SkireScripts/Ouxie/main/Projects/simplebypass.lua"))()
    end,
 })
 
@@ -694,6 +694,13 @@ local Button = HubsTab:CreateButton({
    Name = "Domain X (Looks Good)",
    Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
+   end,
+})
+
+local Button = HubsTab:CreateButton({
+   Name = "QP Hub (Breaks exampleware)",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/QP-Community/Roblox-Exploit/main/Loader2.lua"))()
    end,
 })
 
