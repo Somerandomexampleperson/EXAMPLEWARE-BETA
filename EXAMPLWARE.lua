@@ -93,8 +93,12 @@ Rayfield:Notify({
     end,
  })
 
-
-
+ local Button = AdminTab:CreateButton({
+    Name = "Fates Admin",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
+    end,
+ })
 
 
  --Universal
@@ -705,7 +709,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/QP-Community/Roblox-E
 })
 
 local Button = HubsTab:CreateButton({
-   Name = "Kaov Hub (Tested on Wave)",
+   Name = "Kaov Hub",
    Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Koryxha/Kaov/main/KaovHub.md"))()
    end,
