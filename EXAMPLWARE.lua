@@ -40,6 +40,9 @@ local AdminSection = AdminTab:CreateSection("Admins", nil)
 local HubsTab = Window:CreateTab("Hubs", nil)
 local HubsSection = HubsTab:CreateSection("Hubs", nil)
 
+local ExecutorsTab = Window:CreateTab("Executors", nil)
+local ExecutorsSection = ExecutorsTab:CreateSection("Executors", nil)
+
 local KatTab = Window:CreateTab("KAT", nil)
 local KatSection = KatTab:CreateSection("KAT", nil)
 
@@ -64,7 +67,7 @@ local BedwarsSection = BedwarsTab:CreateSection("Bedwars", nil)
 --Notification
 Rayfield:Notify({
     Title = "Exampleware BETA loaded!",
-    Content = "Thank you for using Exampleware! This script is made for solara and wave. Latest Update: BETA 1.161",
+    Content = "Thank you for using Exampleware! This script is made for solara and wave. Latest Update: BETA 1.17",
     Duration = 5,
     Image = 18312936379,
     Actions = { -- Notification Buttons
@@ -914,5 +917,14 @@ local Button = BedwarsTab:CreateButton({
    Name = "Vape V4 (Wave only)",
    Callback = function()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+   end,
+})
+
+
+--Executors
+local Button = ExecutorsTab:CreateButton({
+   Name = "Synapse X",
+   Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/Synapse-X-Remake.lua"))()
    end,
 })
